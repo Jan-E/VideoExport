@@ -646,7 +646,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             // .TypeHigh      1920 x 1080 (ratio = 16:9)
             // .TypeMedium    480 x 360 (ratio = 4:3)
             // .TypeLow       192 x 144
-            //
+            // .TypeIFrame1280x720
+            // .TypeIFrame960x540
             imagePickerController.videoQuality = .Type640x480  // 640 x 480  (ratio = 4:3)
         }
             
