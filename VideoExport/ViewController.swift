@@ -639,7 +639,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             // imagePickerController.allowsEditing = true  // Default = false
             // imagePickerController.showsCameraControls = false // Default = true
             
-            imagePickerController.videoMaximumDuration = 30 // 30 seconds max
+            imagePickerController.videoMaximumDuration = 3600 // 30 seconds max
             
             
             // Record movie in 640 x 480.  Other options are:
@@ -757,8 +757,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if width == (height * 16.0 / 9.0) {
             SNLog.info("16:9")
             if width >= 512.0 {
-                width = 512.0
-                height = 288.0
+                width = 448.0
+                height = 256.0
             }
             else {
                 // Scale height down to a multiple of 8.  Will already be < 288.0 here.
@@ -771,8 +771,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         else if width == (height * 4.0 / 3.0) {
             SNLog.info("4:3")
             if(width >= 480.0){
-                width = 480.0
-                height = 360.0
+                width = 384.0
+                height = 288.0
             }
             else {
                 // Scale height down to a multiple of 8.  Will already be < 360.0 here.
@@ -917,11 +917,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
             AVVideoCompressionPropertiesKey: [
                 
-                AVVideoAverageBitRateKey: 725000,
+                AVVideoAverageBitRateKey: 350000,
                 AVVideoProfileLevelKey: AVVideoProfileLevelH264Baseline30,
             ],
         ]
-        
+
         
         // Specific audio settings for encoding
         encoder.audioSettings = [
