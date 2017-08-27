@@ -16,7 +16,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rs/SDAVAssetExportSession.git
 
 SPEC CHECKSUMS:
-  SDAVAssetExportSession: 7cfcc8c78123aed47256297853ececa48f057c92
+  SDAVAssetExportSession: 4519764ab1866785f45806fd5de30feeebb350ff
   SVProgressHUD: 46088807596a795cbcb4affd92cf3f13b6ab3dda
 
-COCOAPODS: 0.36.3
+PODFILE CHECKSUM: 9a0444e46e00eba58154fdbc2fbc844ede6ad4b1
+
+COCOAPODS: 1.2.1
